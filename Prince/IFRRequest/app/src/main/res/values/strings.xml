@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">IFR Request</string>
+
+    <string name="tab_title1">CAPTURE</string>
+
+    <string name="tab_title2">RECIEVER</string>
+
+    <string name="tab_title3">SENDER</string>
+
+
+    <!-- Labels for capture fragment -->
+
+    <string name="label_recipients_photo">Recipient\'s Photo</string>
+
+    <string name="label_photo_id_type">Photo Id Type</string>
+
+    <string name="label_front">Front</string>
+
+    <string name="label_back">Back</string>
+
+    <!-- Labels for Reciever Fragment -->
+
+    <string name="label_name">Name</string>
+
+    <string name="label_mobile_number">Mobile Number</string>
+
+    <string name="label_photo_id_Number">Photo ID Number</string>
+
+    <string name="label_amount_in_taka">Amount In Taka</string>
+
+    <string name="err_msg_for_photo_id">Incorrect Length Of NID Number</string>
+
+    <string name="err_msg_for_mobile_no">Incorrect Length Of Mobile Number Or Operator Code</string>
+
+    <string name="err_msg_for_taka_amount">Invalid Amount</string>
+
+    <!-- Labels For Sender Fragment -->
+
+    <string name="label_exchange_house_name">Exchange House Name</string>
+
+    <string name="label_pin">PIN</string>
+
+    <string name="label_ttno">TT No</string>
+
+    <string name="label_sender_name">Sender Name</string>
+
+    <string name="label_sender_country">Sender Country</string>
+
+    <string name="err_msg_for_pin">Incorrect PIN Number</string>
+
+    <string name="err_msg_for_tt_no">Incorrect TT Number</string>
+    <!-- Labels For Review -->
+
+    <string name="label_review">Review</string>
+
+    <string name="label_nid_no">NID No</string>
+
+    <string name="label_cancel">Cancel</string>
+
+    <string name="label_submit">Submit</string>
+
+    <string name="label_next">Next</string>
+
+    <string name="fake_name">Md. Nahidul Islam Siddique</string>
+    <string name="fake_mobile">01845988081</string>
+    <string name="fake_photoIDNum">19902210211952</string>
+    <string name="fake_taka">65,488.00</string>
+    <string name="fake_taka_text">Sixty Five Thousand Four Hundred and Eighty Eight</string>
+
+    <string name="fake_sender_pin">1976201627967380540</string>
+    <string name="fake_sender_tt">66778899</string>
+    <!-- labels for PhotoId Input Fragment -->
+
+    <string name="one">1</string>
+
+    <string name="two">2</string>
+
+    <string name="three">3</string>
+
+    <string name="four">4</string>
+
+    <string name="five">5</string>
+
+    <string name="six">6</string>
+
+    <string name="seven">7</string>
+
+    <string name="eight">8</string>
+
+    <string name="nine">9</string>
+
+    <string name="zero">0</string>
+
+    <string name="label_done">Done</string>
+
+    <string name="digits">ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz .</string>
+
+    <!-- Preference keys -->
+
+    <string name="pref_key_pin">pin_number</string>
+
+    <string name="pref_key_tt">tt_number</string>
+
+    <string name="pref_key_taka_amount">taka_amount</string>
+
+    <string name="pref_key_mobile">mobile_number</string>
+
+    <string name="pref_key_photo_id">photo_id</string>
+
+    <string name="pref_key_passport_id">passport_id</string>
+
+    <string name="pref_key_driving_licence">dl_id</string>
+
+    <string name="pref_key_reciever_name">reciever_name</string>
+
+    <string name="pref_key_sender_name">sender_name</string>
+
+    <string name="pref_key_sender_country">sender_country</string>
+
+    <string name="pref_key_exchange_house">exchange_house</string>
+
+    <string name="pref_key_photo_id_pos">selected_position</string>
+
+
+</resources>

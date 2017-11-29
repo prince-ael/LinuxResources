@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorDarkBlue">#003663</color>
+    <color name="color_gradiant_start">#397BD5</color>
+    <color name="color_gradiant_end">#00D1FE</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightBlue">#8a003663</color>
+    <color name="colorDarkAqua">#3bafda</color>
+    <color name="colorLightAqua">#4fc1e9</color>
+    <color name="colorDeepGrass">#83C15C</color>
+    <color name="colorWildWaterMilon">#ED5565</color>
+</resources>

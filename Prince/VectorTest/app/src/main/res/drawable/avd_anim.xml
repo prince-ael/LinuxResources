@@ -1,0 +1,10 @@
+<!--suppress ALL -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/v_1">
+
+    <target
+        android:name="path2"
+        android:animation="@animator/a_1">
+
+    </target>
+</animated-vector>

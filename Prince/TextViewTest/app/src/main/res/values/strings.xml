@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TextViewTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">If I remember correctly, omitting the background attribute sets a default background. However, explicitly setting background to "@null" removes the background, causing whatever is below the element to be shown. In particular, if you for instance set the background of a Button to null, the border of the button will also be gone (and the button effectively will not really look like a button at all).</string>
+</resources>

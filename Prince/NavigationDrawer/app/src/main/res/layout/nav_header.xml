@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDarkAqua">
+    
+    <ImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_width="@dimen/nav_header_iv_dimen"
+        android:layout_height="@dimen/nav_header_iv_dimen"
+        android:scaleType="fitCenter"
+        android:background="@drawable/art_circle"
+        android:layout_marginLeft="@dimen/margin_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_label_welcome_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_welcome"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorDarkBlue"
+        android:fontFamily="@font/roboto_regular"
+        android:translationY="3dp"
+        android:layout_marginLeft="@dimen/margin_list"
+        app:layout_constraintTop_toTopOf="@id/iv_profile_pic"
+        app:layout_constraintLeft_toRightOf="@+id/iv_profile_pic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_header_user_name"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/tv_header_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liara Williams"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textColor="@color/colorDarkBlue"
+        android:fontFamily="@font/roboto_bold"
+        android:translationY="-10dp"
+        android:layout_marginTop="@dimen/margin_min"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_label_welcome_header"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_welcome_header"
+        app:layout_constraintBottom_toBottomOf="@id/iv_profile_pic"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_number_wraper"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/floating_label_style"
+        app:errorTextAppearance="@style/error_label_style">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_input_number"
+            android:textSize="@dimen/input_text_size"
+            android:textColor="@android:color/black"
+            android:hint="@string/label_photo_id_Number"
+            android:gravity="center"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_as_custom_keypad"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorCardBackbround"
+        android:padding="@dimen/keypad_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/row1">
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:id="@+id/btn_one"
+               card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+               card_view:cardElevation="@dimen/card_elevation"
+               card_view:cardBackgroundColor="@android:color/white">
+
+               <TextView
+                   style="@style/keyboard_btn_style"
+                   android:text="@string/one"
+                   android:layout_gravity="center"/>
+
+           </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_two"
+                android:layout_marginLeft="@dimen/key_margin_left"
+                android:layout_marginRight="@dimen/key_margin_right"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/two"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_three"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/three"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/row2"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="@dimen/keypad_padding">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_four"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/four"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_five"
+                android:layout_marginLeft="@dimen/key_margin_left"
+                android:layout_marginRight="@dimen/key_margin_right"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/five"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_six"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/six"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/row3"
+            android:layout_below="@+id/row2"
+            android:layout_marginTop="@dimen/keypad_padding">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_seven"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/seven"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_eight"
+                android:layout_marginLeft="@dimen/key_margin_left"
+                android:layout_marginRight="@dimen/key_margin_right"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/eight"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_nine"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/nine"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/row4"
+            android:layout_below="@+id/row3"
+            android:layout_marginTop="@dimen/keypad_padding"
+            android:layout_marginBottom="@dimen/key_padding">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_backspace"
+                android:paddingTop="@dimen/keypad_padding"
+                android:paddingBottom="@dimen/keypad_padding"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                <ImageView
+                    android:layout_width="@dimen/keyboard_backspace_icon_size"
+                    android:layout_height="@dimen/keyboard_backspace_icon_size"
+                    android:src="@drawable/ic_backspace_black_24dp"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_zero"
+                android:layout_marginLeft="@dimen/key_margin_left"
+                android:layout_marginRight="@dimen/key_margin_right"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@android:color/white">
+
+                <TextView
+                    style="@style/keyboard_btn_style"
+                    android:text="@string/zero"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_done"
+                card_view:cardCornerRadius="@dimen/corner_radious_for_keypad_card"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:cardBackgroundColor="@color/colorCardBackgroundLight">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_done"
+                    android:textSize="@dimen/key_done_text_size"
+                    android:textColor="@android:color/black"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

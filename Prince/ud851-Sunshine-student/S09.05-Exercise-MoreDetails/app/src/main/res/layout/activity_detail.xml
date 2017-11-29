@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Completed (1) Change the FrameLayout to a vertical LinearLayout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Completed (2) Remove the tv_display_weather TextView -->
+    <!-- Text that describes the weather summary for a given day -->
+    <!-- Completed (3) Add a TextView for the selected day's date -->
+    <!-- Completed (4) Add a TextView for the selected day's weather description -->
+    <!-- Completed (5) Add a TextView for the selected day's high temperature -->
+    <!-- Completed (6) Add a TextView for the selected day's low temperature -->
+    <!-- Completed(7) Add a TextView for the selected day's humidity -->
+    <!-- Completed (8) Add a TextView for the selected day's pressure -->
+    <!-- Completed (9) Add a TextView for the selected day's wind -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_date"
+        android:text="Today, December 15, 2010"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_weather_desc"
+        android:text="Drizzle"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_high_temperature"
+        android:text="6°"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_low_temperature"
+        android:text="-3°"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_humidity"
+        android:text="63 %"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_pressure"
+        android:text="938 hpa"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_selected_days_wind"
+        android:text="0 km/h n"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+

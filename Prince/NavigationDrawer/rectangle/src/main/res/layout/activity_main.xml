@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ael_mnisiddique.com.rectangle.MainActivity">
+
+    <View
+        android:id="@+id/rect1"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/rect2"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/px_label"
+        android:text="Dimension In Pixel"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@+id/rect2"
+        app:layout_constraintBottom_toBottomOf="@+id/rect2"
+        app:layout_constraintRight_toLeftOf="@+id/rect2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dp_label"
+        android:text="Dimension In Dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@+id/rect1"
+        app:layout_constraintBottom_toBottomOf="@+id/rect1"
+        app:layout_constraintRight_toLeftOf="@+id/rect1"/>
+
+</android.support.constraint.ConstraintLayout>

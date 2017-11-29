@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#616"
+    tools:context="com.example.adaptive.myapplication.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hpy_brth_day"
+        android:text="Happy Birth day , to "
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:background="#000"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:text="From m"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_toRightOf="@+id/hpy_brth_day"
+        android:layout_alignBottom="@id/hpy_brth_day"
+        android:background="#ff11dd"/>
+
+
+</RelativeLayout>

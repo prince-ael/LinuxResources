@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ifr_request.ael.ifrrequest.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_main">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_main"/>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablayout_main"
+            app:tabMode="fixed"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            app:tabPaddingStart="0dp"
+            app:tabIndicatorColor="@color/tabIndicatorColor"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/tab_text_appearence_style"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_main"
+        android:layout_below="@+id/appbar_main"/>
+</RelativeLayout>

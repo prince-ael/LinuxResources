@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.ael_mnisiddique.com.ripple.AdjustResizeActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 1"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv"/>
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 2"
+            android:textSize="24sp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et1"/>
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 3"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et2"/>
+        <EditText
+            android:id="@+id/et4"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 4"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et3"/>
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 5"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et4"/>
+        <EditText
+            android:id="@+id/et6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 6"
+            android:textSize="24sp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et5"/>
+
+        <EditText
+            android:id="@+id/et7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 7"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:inputType="numberDecimal"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et6"/>
+        <EditText
+            android:id="@+id/et8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ET 8"
+            android:textSize="24sp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et7"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

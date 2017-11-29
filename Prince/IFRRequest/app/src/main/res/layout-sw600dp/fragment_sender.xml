@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_sender_exchange_house_label"
+            android:text="@string/label_exchange_house_name"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_sender_exchane_house_icon"
+            android:layout_below="@+id/tv_sender_exchange_house_label"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/spinner_sender_exchange_house"
+            android:entries="@array/array_exchange_houses"
+            android:layout_below="@+id/tv_sender_exchange_house_label"
+            android:layout_toRightOf="@+id/iv_sender_exchane_house_icon"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:spinnerMode="dropdown"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_sender_pin_label"
+            android:text="@string/label_pin"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_sender_click_icon"
+            android:layout_below="@+id/tv_sender_pin_label"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="66dp"
+            android:id="@+id/et_sender_pin"
+            android:hint="@string/label_pin"
+            tools:text="@string/fake_sender_pin"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tv_sender_pin_label"
+            android:layout_toRightOf="@+id/iv_sender_click_icon"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:paddingLeft = "2dp"
+            android:background="@drawable/art_blue_line"
+            android:focusable="false"/>
+        <EditText
+            android:layout_width="135dp"
+            android:layout_height="66dp"
+            android:id="@+id/et_sender_tt"
+            tools:text="@string/fake_sender_tt"
+            android:hint="@string/label_ttno"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tv_sender_pin_label"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/art_blue_line"
+            android:paddingLeft="2dp"
+            android:focusable="false"/>
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_sender_tt_label"
+            android:text="@string/label_ttno"
+            android:layout_toRightOf="@+id/et_sender_pin"
+            android:layout_alignLeft="@+id/et_sender_tt"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_sender_name_label"
+            android:text="@string/label_sender_name"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_sender_name_icon"
+            android:layout_below="@+id/tv_sender_name_label"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+
+        <EditText
+            style="@style/et_style_general"
+            android:id="@+id/et_sender_name"
+            android:hint="@string/label_sender_name"
+            tools:text="Mohammad Ashraful Sardar"
+            android:layout_below="@+id/tv_sender_name_label"
+            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:layout_toRightOf="@+id/iv_sender_name_icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_sender_country_label"
+            android:text="@string/label_sender_country"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_sender_country_icon"
+            android:layout_below="@+id/tv_sender_country_label"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/spinner_sender_country"
+            android:entries="@array/array_sender_countries"
+            android:layout_below="@+id/tv_sender_country_label"
+            android:layout_toRightOf="@+id/iv_sender_country_icon"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:id="@+id/rl_as_review_btn"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="@dimen/margin_left_max">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/tv_review_btn_label"
+            android:background="@color/colorLabel"
+            android:text="@string/label_review"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

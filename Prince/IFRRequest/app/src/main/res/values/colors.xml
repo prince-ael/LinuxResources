@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorActionBar">#607D8B</color>
+    <color name="colorStatusBar">#455A64</color>
+
+    <color name="colorLabel">#1F9BFD</color>
+
+
+    <color name="colorBox">#FFFF00</color>
+    <color name="colorBoxBorder">#009688</color>
+
+    <color name="tabIndicatorColor">#FFB570</color>
+
+    <color name="colorCardBackbround">#CACBCF</color>
+
+    <color name="colorCardBackgroundLight">#E0E1E3</color>
+
+</resources>

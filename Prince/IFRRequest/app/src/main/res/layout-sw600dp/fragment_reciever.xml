@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_reciever_name_label"
+            android:text="@string/label_name"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_name_icon"
+            android:src="@drawable/ic_name_icon"
+            android:layout_below="@+id/tv_reciever_name_label"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <EditText
+            style="@style/et_style_general"
+            android:id="@+id/et_reciever_name"
+            android:hint="@string/label_name"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:layout_below="@+id/tv_reciever_name_label"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:layout_toRightOf="@+id/iv_name_icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_reciever_mobile_no_label"
+            android:text="@string/label_mobile_number"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_mobile_no_icon"
+            android:src="@drawable/ic_mobile_number"
+            android:layout_below="@+id/tv_reciever_mobile_no_label"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <EditText
+            style="@style/et_style_general"
+            android:id="@+id/et_reciever_mobile_no"
+            android:hint="@string/label_mobile_number"
+            android:layout_below="@+id/tv_reciever_mobile_no_label"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:layout_toRightOf="@+id/iv_mobile_no_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_reciever_photo_id_label"
+            android:text="@string/label_photo_id_type"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_photo_id_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/tv_reciever_photo_id_label"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/spinner_photo_id_type"
+            android:entries="@array/array_photo_id_types"
+            android:layout_below="@+id/tv_reciever_photo_id_label"
+            android:layout_toRightOf="@+id/iv_photo_id_icon"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_photo_id_number">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_reciever_photoid_no_label"
+            android:text="@string/label_photo_id_Number"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_photoid_no_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/tv_reciever_photoid_no_label"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <EditText
+            style="@style/et_style_general"
+            android:id="@+id/et_reciever_photoid_no"
+            android:hint="@string/label_photo_id_Number"
+            android:layout_below="@+id/tv_reciever_photoid_no_label"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:layout_toRightOf="@+id/iv_photoid_no_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_style_label"
+            android:id="@+id/tv_reciever_taka_amount_label"
+            android:text="@string/label_amount_in_taka"
+            android:layout_marginLeft="@dimen/margin_left_max"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_taka_amount_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/tv_reciever_taka_amount_label"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <EditText
+            style="@style/et_style_general"
+            android:id="@+id/et_reciever_taka_amount"
+            android:hint="@string/label_amount_in_taka"
+            android:layout_below="@+id/tv_reciever_taka_amount_label"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:layout_toRightOf="@+id/iv_taka_amount_icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/tv_taka_amount_in_text"
+            android:textColor="#455A64"
+            android:text="@string/fake_taka_text"
+            android:textSize="22sp"
+            android:gravity="top"
+            android:layout_below="@+id/et_reciever_taka_amount"
+            android:layout_alignLeft="@+id/et_reciever_taka_amount"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

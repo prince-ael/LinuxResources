@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161">
+
+    <TextView
+        style="@style/forTextView"
+        android:id="@+id/third"
+        android:text="A3"
+        android:textColor="#00FF00"/>
+
+    <ImageView
+        style="@style/forImageView"
+        android:id="@+id/a3_before"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigate_before_black_24dp"/>
+    <ImageView
+        style="@style/forImageView"
+        android:id="@+id/a3_home"
+        android:src="@drawable/ic_home_black_24dp"
+        android:tint="#ff0000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

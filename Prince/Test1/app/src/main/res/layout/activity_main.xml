@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.experiment.com.test1.MainActivity">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/window"
+        android:layout_centerInParent="true"
+        android:background="@drawable/art_rectangle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upper_cover"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_above="@+id/window"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_cover"
+        android:background="@color/colorAccent"
+        android:layout_toLeftOf="@+id/window"
+        android:layout_below="@+id/upper_cover"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_cover"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_toRightOf="@id/window"
+        android:layout_below="@+id/upper_cover"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_cover"
+        android:orientation="horizontal"
+        android:layout_below="@+id/window"
+        android:layout_alignLeft="@id/window"
+        android:layout_alignRight="@id/window"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"/>
+</RelativeLayout>

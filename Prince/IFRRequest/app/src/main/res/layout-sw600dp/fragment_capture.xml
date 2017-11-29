@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_recipents_photo"
+        android:text="@string/label_recipients_photo"
+        android:textSize="24sp"
+        android:textColor="@color/colorLabel"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            style="@style/iv_style_icon"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/iv_recipent_photo_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/iv_recipent_image"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/art_white_rectangle_with_border"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_capture_photo_id_label"
+            android:text="@string/label_photo_id_type"
+            android:textSize="24sp"
+            android:textColor="@color/colorLabel"
+            android:layout_marginLeft="@dimen/margin_left_max"
+            android:layout_marginTop="@dimen/top_margin_for_review_label"/>
+        <ImageView
+            style="@style/iv_style_icon"
+            android:id="@+id/iv_capture_photo_id_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/tv_capture_photo_id_label"
+            android:layout_marginTop="@dimen/capture_label_margin_top"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_capture_photo_id_type"
+            android:entries="@array/array_photo_id_types"
+            android:layout_below="@+id/tv_capture_photo_id_label"
+            android:layout_toRightOf="@+id/iv_capture_photo_id_icon"
+            android:layout_marginLeft="@dimen/margin_left_min"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="180dp"
+            android:id="@+id/iv_capture_font"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/art_white_rectangle_without_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_capture_front_label"
+            android:text="@string/label_front"
+            android:textSize="24sp"
+            android:textColor="@color/colorLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_capture_font"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="180dp"
+            android:id="@+id/iv_capture_back"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/art_white_rectangle_without_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_capture_back_label"
+            android:text="@string/label_back"
+            android:textSize="24sp"
+            android:textColor="@color/colorLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_capture_back"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+</LinearLayout>

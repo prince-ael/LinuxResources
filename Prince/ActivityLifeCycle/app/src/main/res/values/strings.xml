@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ActivityLifeCycle</string>
+
+    <string name="label_main_activity">Activity States</string>
+
+    <string name="onCreateText">Activity Is In onCreate() State</string>
+    <string name="onStartText">Activity Is In onStart() State</string>
+    <string name="onPauseText">Activity Is In onPause() State</string>
+    <string name="onResumeText">Activity Is In onResume() State</string>
+    <string name="onDestroyText">Activity Is In onDestroy() State</string>
+    <string name="onRestartText">Activity Is In onRestart() State</string>
+    <string name="onStopText">Activity Is In onStop() State</string>
+    <string name="instanceState">Saving Instance State</string>
+
+</resources>

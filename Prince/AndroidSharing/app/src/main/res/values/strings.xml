@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidSharing</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_share_image">Share Image</string>
+
+    <string name="textToShare">Hello Idiots!!!!</string>
+
+    <string name="title">Share Using...</string>
+
+</resources>
