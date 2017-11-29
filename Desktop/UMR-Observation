@@ -1,0 +1,12 @@
+* Patient Record - Search Button crashes while all fields are empty.(SearchActivity.java:210)
+  Search Button is causing NPE.
+
+* Save Button is not enabled inside user settings fragment & EditUserInfoActivity.
+
+* backButton on toolbar is not referenced properly.
+
+* User Settings Toasts Something wrong.(Find out why???)
+
+* User Not Exited While Pressing The Back Button before log out.
+
+* Feature Not Implemented :- DemographicEditor, Change password, AlertNetwork.

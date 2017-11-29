@@ -1,0 +1,45 @@
+
+--------------------------------------------Amending(Correcting) Git Commit-------------------------
+
+Amending means correction of commit in git.
+
+To Do This use 
+
+git commit --amend
+
+/*
+  * It will let you edit last commit message
+*/
+
+Then force push the changes.Like below
+
+git push --force example-branch
+
+['git rm --cached AndroidV2 -r' Unstaging Project]
+--------------------------------------------Git Reset-----------------------------------------------
+reseting in git means removing a file or a bunch of file from staging area[lsit of tracked files]
+
+Syntax : git reset filename.extension
+
+--------------------------------------------Git Branching-------------------------------------------
+
+$ git branch  //Show The Current Branch We r in
+* master
+
+$ git branch -a // List all the branches '*' denotes current branch
+
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/UMR_ios
+  remotes/origin/V1-Old
+  remotes/origin/dev_Ali
+  remotes/origin/dev_Nahid
+  remotes/origin/dev_branch
+  remotes/origin/master
+  
+$ git checkout [dev_Nahid(branch name)] // switches from current branch to the branch mentioned after checkout.
+
+M	AndroidV2/New Text Document.txt
+Branch dev_Nahid set up to track remote branch dev_Nahid from origin.
+Switched to a new branch 'dev_Nahid'
+

@@ -1,0 +1,21 @@
+Slide UP Animation :- https://stackoverflow.com/questions/44145363/animate-visibility-of-a-view-from-gone-to-visible-with-animation
+Simple animation while setVisibility(View.GONE):- https://stackoverflow.com/questions/44145363/animate-visibility-of-a-view-from-gone-to-visible-with-animation
+
+additional link :- https://stackoverflow.com/questions/4043398/animate-visibility-modes-gone-and-visible
+
+GetStarted Color :- #003663
+Font:- Roboto-Medium
+textSize:-16sp
+
+https://stackoverflow.com/questions/6645537/how-to-detect-the-swipe-left-or-right-in-android
+https://stackoverflow.com/questions/13095494/how-to-detect-swipe-direction-between-left-right-and-up-down
+https://stackoverflow.com/questions/4139288/android-how-to-handle-right-to-left-swipe-gestures
+
+<android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/art_underline"
+            android:inputType="textEmailAddress|textAutoCorrect"/>
+

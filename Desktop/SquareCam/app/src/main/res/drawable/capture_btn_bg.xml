@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/ic_art_circle_pressed"
+        android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_art_circle_normal_state"
+        android:state_pressed="false"/>
+    <item android:drawable="@drawable/ic_art_circle_normal_state"/>
+</selector>
