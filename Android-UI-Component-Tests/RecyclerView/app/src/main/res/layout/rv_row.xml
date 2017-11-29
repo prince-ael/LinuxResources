@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.rmiri.skeleton.SkeletonGroup
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skeletonGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    Skeleton:SK_BackgroundViewsColor="#EEEEEE"
+    Skeleton:SK_animationAutoStart="true"
+    Skeleton:SK_animationDirection="LTR"
+    Skeleton:SK_animationDuration="1000"
+    Skeleton:SK_animationFinishType="gradient"
+    Skeleton:SK_animationNormalType="gradient"
+    Skeleton:SK_backgroundMainColor="@android:color/transparent"
+    Skeleton:SK_highLightColor="#8b8080">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <io.rmiri.skeleton.SkeletonView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            Skeleton:SK_cornerRadius="4dp"
+            Skeleton:SK_padding="0dp"
+            Skeleton:SK_shapeType="rect"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#3F8989"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_thin"/>
+        </io.rmiri.skeleton.SkeletonView>
+
+    </android.support.constraint.ConstraintLayout>
+</io.rmiri.skeleton.SkeletonGroup>

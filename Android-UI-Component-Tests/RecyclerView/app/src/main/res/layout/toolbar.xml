@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/new_toolbar"
+    android:padding="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@android:color/holo_blue_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_navdrawer_opener"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_nav_menu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/ic_umr_portals" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14sp"
+                android:text="UMRPortals"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:id="@+id/btn_menu_admin"
+                android:layout_width="@dimen/toolbar_menu_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/art_admin_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:cardCornerRadius="12dp"
+                    cardPreventCornerOverlap="false"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/art_img_background_circle_white"
+                        android:src="@drawable/ic_menu_user" />
+                </android.support.v7.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/iv_menu_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_menu_dropdown"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/menu_border_width"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/btn_menu_alarm"
+                android:layout_width="@dimen/toolbar_menu_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/art_alarm_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_alarm"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/menu_border_width"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/btn_menu_logout"
+                android:layout_width="@dimen/toolbar_menu_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/art_logout_bg"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_logout"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
